@@ -16,8 +16,8 @@ public class LinqExample : MonoBehaviour
     {
         numbersA.Add(1);
         numbersA.Add(2);
-        numbersA.Add(3);
-        numbersA.Add(4);
+        numbersA.Add(5);
+        numbersA.Add(8);
 
         numbersB.Add(1);
         numbersB.Add(3);
