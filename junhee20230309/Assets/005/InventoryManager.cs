@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
+//2¹øÂ° µñ¼Å³Ê¸®
 [System.Serializable]
 
 public class Item                                               //Item Class ¼±¾ð

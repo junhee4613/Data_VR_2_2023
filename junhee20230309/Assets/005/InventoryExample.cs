@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
-
+//3번째 딕셔너리
 public class InventoryExample : MonoBehaviour
 {
     public InventoryManager inventoryManager;                   //매니저를 받아온다.
