@@ -23,7 +23,7 @@ public class InventoryExample : MonoBehaviour
 
         inventoryManager.PrintInventory();
 
-        var sortedByValue = inventoryManager.inventory.OrderBy(pair =>pair.Value.itemCount).ToDictionary
+        var sortedByValue = inventoryManager.inventory.OrderBy(pair => pair.Value.itemCount).ToDictionary
             (pair => pair.Value.itemName, pair => pair.Value.itemCount);                //아이템 갯수 순서대로 정렬
 
         foreach(KeyValuePair<string, int> entry in sortedByValue)
