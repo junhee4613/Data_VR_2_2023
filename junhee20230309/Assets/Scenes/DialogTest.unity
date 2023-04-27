@@ -685,11 +685,12 @@ MonoBehaviour:
     tweenType: 0
     nextindex: -100
   DialogInit: 1
-  dialogsDB: 0
+  dialogsDB: 1
   currentDialogIndex: -1
   currentSpeakerIndex: 0
   typingSpeed: 0.1
   isTypingEffect: 0
+  entity_Dialogue: {fileID: 11400000, guid: 271e63985fa53fc4a9915cc31bc06924, type: 2}
 --- !u!4 &1417831762
 Transform:
   m_ObjectHideFlags: 0

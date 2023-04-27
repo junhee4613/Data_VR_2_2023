@@ -19,19 +19,31 @@ public class DialogSystem : MonoBehaviour
     public int currentDialogIndex = -1;                                 //현재 대사 순번
     public int currentSpeakerIndex = 0;                                 //현재 말을 하는 화자의 Speakers 배열 순번
     public float typingSpeed = 0.1f;                                    //텍스트 타이핑 효과의 재생 속도
-    public bool isTypingEffect = false;
+    public bool isTypingEffect = false;                                 //텍스트 타이핑 효과가 재생중인지 판단.
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Entity_Dialogue entity_Dialogue;
 
-    // Update is called once per frame
-    void Update()
+    private void Awake()
     {
-        
-    }
+        SetAllClose();
+        if (dialogsDB)
+        {
+            Array.Clear(dialogs, 0, dialogs.Length);
+            Array.Resize(ref dialogs, entity_Dialogue.sheets[0].list.Count);
+
+            int ArrayCursor = 0;
+            foreach (Entity_Dialogue.Param param in entity_Dialogue.sheets[0].list)
+            {
+                dialogs[ArrayCursor].index = param.index;
+                dialogs[ArrayCursor].speakerUIindex = param.speakerUIindex;
+                dialogs[ArrayCursor].name = param.name;
+                dialogs[ArrayCursor].dialogue = param.dialogue;
+                dialogs[ArrayCursor].characterPath = param.characterPath;
+                dialogs[ArrayCursor].nextindex = param.nextindex;
+                ArrayCursor += 1;
+            }
+        }
+    } 
     //함수를 통해 UI가 보여지거나 안보여지게 설정
     private void SetActiveObjects(SpeakerUI speaker, bool visible)
     {
@@ -136,10 +148,7 @@ public class DialogSystem : MonoBehaviour
         return false;
     }
 
-    private void Awake()
-    {
-        SetAllClose();
-    }
+   
 
     [System.Serializable]
 
