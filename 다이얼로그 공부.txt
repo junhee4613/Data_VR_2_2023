@@ -1,0 +1,3 @@
+currenIndex = 0
+InitType = true;
+DialogInit = true;
