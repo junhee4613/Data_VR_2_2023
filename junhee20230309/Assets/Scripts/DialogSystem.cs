@@ -93,7 +93,7 @@ public class DialogSystem : MonoBehaviour
         if (dialogs[currentDialogIndex].characterPath != "None")    //None이 아닐경우 DB에 넣어놓은 경로의 캐릭터 이미지를 가져온다.
         {
             speakers[currentSpeakerIndex].imgCharacter.sprite =
-                Resources.Load<Sprite>(dialogs[currentDialogIndex].characterPath);
+                Resources.Load<Sprite>(dialogs[currentDialogIndex].characterPath);      
         }
         while(index < dialogs[currentDialogIndex].dialogue.Length + 1)
         {
@@ -101,7 +101,7 @@ public class DialogSystem : MonoBehaviour
                 dialogs[currentDialogIndex].dialogue.Substring(0, index);   //텍스트를 한글자씩 타이핑 재생
 
             index++;
-            yield return new WaitForSeconds(typingSpeed);
+            yield return new WaitForSeconds(typingSpeed);       //0.1f의 속도로
         }
 
         isTypingEffect = false;
