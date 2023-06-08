@@ -18,8 +18,8 @@ MonoBehaviour:
     - index: 0
       speakerUIindex: 0
       name: "\uC774\uB984_001"
-      dialogue: "\uB2E4\uC774\uC5BC\uB85C\uADF8 \uD14C\uC2A4\uD2B8 \uB2E4\uC774\uC5BC\uB85C\uADF8
-        \uD14C\uC2A4\uD2B8 \uB2E4\uC774\uC5BC\uB85C\uADF8 \uD14C\uC2A4\uD2B8 001"
+      dialogue: "\uB2E4\uC774\uC5BC\uB85C\uADF8 \uD14C\uC2A4\uD2B8 \uC784\uD3EC\uD2B8
+        \uD574\uC57C\uB418\uB294\uC9C0 \uC5EC\uBD80"
       characterPath: None
       tweenType: 0
       nextindex: 1
@@ -183,3 +183,12 @@ MonoBehaviour:
       characterPath: None
       tweenType: 0
       nextindex: -100
+    - index: 0
+      speakerUIindex: 0
+      name: 
+      dialogue: "\uC5EC\uAE30\uC5D0 \uC788\uB294 \uB370\uC774\uD130\uB97C \uBC14\uAFD4\uB3C4
+        \uC784\uD3EC\uD2B8\uD55C\uAC8C \uC2E4\uC2DC\uAC04\uC73C\uB85C \uC800\uC7A5\uB418\uC5B4
+        \uBC14\uAFBC \uADF8\uB300\uB85C \uCD9C\uB825\uB41C\uB2E4."
+      characterPath: 
+      tweenType: 0
+      nextindex: 0

@@ -93,7 +93,7 @@ public class DialogSystem : MonoBehaviour
         if (dialogs[currentDialogIndex].characterPath != "None")    //None이 아닐경우 DB에 넣어놓은 경로의 캐릭터 이미지를 가져온다.
         {
             speakers[currentSpeakerIndex].imgCharacter.sprite =
-                Resources.Load<Sprite>(dialogs[currentDialogIndex].characterPath);      
+                Resources.Load<Sprite>(dialogs[currentDialogIndex].characterPath);      //엑셀의 이 경로에 원하는 이미지의 에셋주소를 달아주면 이미지가 들어간다.     
         }
         while(index < dialogs[currentDialogIndex].dialogue.Length + 1)
         {
@@ -136,7 +136,7 @@ public class DialogSystem : MonoBehaviour
 
             if (dialogs[currentDialogIndex].nextindex != -100)
             {
-                SetNextDialog(dialogs[currentDialogIndex].nextindex);
+                SetNextDialog(dialogs[currentDialogIndex].nextindex);           //다음대사 진행되게 하는 코드
             }
             else
             {
@@ -145,7 +145,7 @@ public class DialogSystem : MonoBehaviour
                 return true;
             }
         }
-        return false;
+        return false;                   //DialogTest에 있는 IEnumerator Start의 기다림이 끝나 시스템이 종료된다.
     }
 
    
